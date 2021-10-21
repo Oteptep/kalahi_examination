@@ -11,8 +11,6 @@
 @section('custom-script')
   <script>
     let select = document.getElementById('regions');
-    let appended = [];
-
     const get = async () => {
       const response = await fetch('https://ncddpdb.dswd.gov.ph/api/ceac/lib_region')
       const result = await response.json();
