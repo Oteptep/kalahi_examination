@@ -23,4 +23,5 @@ use App\Http\Controllers\VolunteerController;
 Route::get('auth/login', [LoginController::class, 'index']);
 Route::get('reverse/{number}', [MasterController::class, 'index']);
 Route::resource('volunteer', VolunteerController::class);
+Route::get('fetch', [MasterController::class, 'fetch']);
 Route::get('volunteer/delete/{volunteer_id}', [VolunteerController::class, 'delete'])->name('volunteer.delete');

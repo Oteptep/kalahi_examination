@@ -15,4 +15,9 @@ class MasterController extends Controller
         }
         return $new;
     }
+
+    public function fetch(Request $request) 
+    {
+        return view('fetch.index');
+    }
 }
