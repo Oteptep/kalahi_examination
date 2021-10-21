@@ -3,7 +3,7 @@
 @section('content')
   <div>
     <select class="form-select" aria-label="Default select example" id="regions">
-
+      <option>Select Region</option>
     </select>
   </div>
 @endsection
@@ -17,7 +17,7 @@
       const response = await fetch('https://ncddpdb.dswd.gov.ph/api/ceac/lib_region')
       const result = await response.json();
 
-      result.forEach(function (value){
+      result.map(function (value){
         const { Id, Name } = value;
         let option = document.createElement('option');
         option.text = Name

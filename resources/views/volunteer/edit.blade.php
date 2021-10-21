@@ -1,8 +1,9 @@
 @extends('layouts.main')
 
 @section('content')
-  <form method="POST" >
+  <form method="POST" action={{ route('volunteer.update', $volunteer->volunteer_id) }}>
     @csrf
+    @method('PUT')
     <div class="mb-3">
       <label for="exampleFormControlInput1" class="form-label">Lastname</label>
       <input value={{ $volunteer->last_name }} type="text" name="last_name" class="form-control" id="exampleFormControlInput1">

@@ -82,9 +82,10 @@ class VolunteerController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, $volunteer_id)
     {
-        //
+       Volunteer::find($volunteer_id)->find($volunteer_id)->update($request->except(['_token', '_method']));
+       return redirect('volunteer')->with(['message' => 'Updated Successfully']);
     }
 
     /**
