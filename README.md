@@ -16,4 +16,5 @@
     - Also made up of PHP
     - run php artisan migrate first before testing to migrate tables.
     - Models Used ( Region, Sex, User, Volunteer) - https://github.com/Oteptep/kalahi_examination/tree/master/app
+    - View Used (index, create, edit) - https://github.com/Oteptep/kalahi_examination/tree/master/resources/views/volunteer
     - Controller Used (Volunteer Controller) - https://github.com/Oteptep/kalahi_examination/blob/master/app/Http/Controllers/VolunteerController.php
